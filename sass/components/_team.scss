@@ -1,0 +1,64 @@
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  background-color: #f5f4fa;
+}
+
+.team__title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+
+  color: var(--basic-text-color);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.our-employees {
+  display: flex;
+  padding: 0px;
+}
+
+.our-employees__best {
+  background-color: var(--basic-background-color);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(70, 3, 3, 0.12);
+  border-radius: 4px;
+}
+
+.our-employees__best + .our-employees__best {
+  margin-left: 30px;
+}
+
+.our-employees__group {
+  padding: 30px;
+}
+
+.our-employees__name {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: 10px;
+
+  color: var(--basic-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+}
+
+.our-employees__text {
+  display: flex;
+  padding-top: 0px;
+  margin-top: 0px;
+  margin-bottom: 16px;
+  justify-content: center;
+
+  color: var(--additional-text-color);
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+}

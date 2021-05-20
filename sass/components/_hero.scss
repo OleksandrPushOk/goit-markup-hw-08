@@ -1,0 +1,64 @@
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  background-color: var(--additional-background-color);
+}
+
+.hero__bgr-images {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px rgba(0, 0, 0, 1);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/Imghero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero__title {
+  margin-top: 0px;
+  margin-bottom: 30px;
+
+  color: var(--additional-white-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-button {
+  border: 1px solid var(--button-border-color);
+  border-radius: 4px;
+  padding: 10px 32px;
+  display: inline-block;
+  cursor: pointer;
+
+  color: var(--additional-white-text-color);
+  background-color: var(--button-background-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--basic-text-color);
+  }
+
+  &:active {
+    color: red;
+  }
+}
