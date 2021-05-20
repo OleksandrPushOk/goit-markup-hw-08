@@ -3,6 +3,11 @@
   padding-bottom: 94px;
 
   background-color: #f5f4fa;
+
+  @media screen and (min-width: 480px) and (max-width: 1199.98px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .team__title {
@@ -18,8 +23,26 @@
 }
 
 .our-employees {
-  display: flex;
   padding: 0px;
+
+  @media screen and (min-width: 480px) {
+    flex-direction: column;
+    padding-left: 0px;
+    width: 450px;
+    height: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    width: 270px;
+    height: auto;
+  }
 }
 
 .our-employees__best {
@@ -30,7 +53,9 @@
 }
 
 .our-employees__best + .our-employees__best {
-  margin-left: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 30px;
+  }
 }
 
 .our-employees__group {

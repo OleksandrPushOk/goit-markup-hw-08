@@ -6,6 +6,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  outline: 1px solid tomato;
 }
 
 body {
@@ -14,6 +15,12 @@ body {
   font-family: Roboto, sans-serif;
   color: var(--basic-text-color);
   background-color: var(--basic-background-color);
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 ul {
