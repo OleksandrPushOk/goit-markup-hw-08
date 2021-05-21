@@ -1,12 +1,29 @@
 .information {
   padding-top: 94px;
   padding-bottom: 94px;
+
+  @media screen and (max-width: 1199.98px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .quality {
   display: flex;
-  justify-content: space-between;
   padding-left: 0px;
+
+  @media screen and (max-width: 767.98px) {
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: 1199.98px) {
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .quality__list {
@@ -21,6 +38,31 @@
     background-repeat: no-repeat;
     background-position: center;
     background-color: rgba(245, 244, 250, 1);
+
+    @media screen and (max-width: 480px) {
+      width: 100%;
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 767.98px) {
+      width: 450px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+      width: 354px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    height: auto;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767.98px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    width: 354px;
   }
 }
 
@@ -41,7 +83,27 @@
 }
 
 .quality__list + .quality__list {
-  margin-left: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 30px;
+  }
+}
+
+.quality__list:nth-child(-n + 3) {
+  @media screen and (max-width: 767.98px) {
+    margin-bottom: 30px;
+  }
+}
+
+.quality__list:nth-child(-n + 2) {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    margin-bottom: 30px;
+  }
+}
+
+.quality__list:nth-child(2n + 1) {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    margin-right: 30px;
+  }
 }
 
 .quality__title {
@@ -54,6 +116,14 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  @media screen and (max-width: 767.98px) {
+    display: flex;
+    justify-content: center;
+  }
+  @media screen and (max-width: 1199.98px) {
+    line-height: 1.17;
+  }
 }
 
 .quality__text {
@@ -61,6 +131,7 @@
   margin-bottom: 0px;
 
   color: var(--additional-text-color);
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
