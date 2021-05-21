@@ -358,6 +358,12 @@ ul {
   padding-bottom: 94px;
 }
 
+@media screen and (max-width: 1199.98px) {
+  .work {
+    display: none;
+  }
+}
+
 .work__title {
   margin-top: 0px;
   margin-bottom: 50px;
@@ -410,7 +416,7 @@ ul {
   background-color: #f5f4fa;
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199.98px) {
+@media screen and (max-width: 1199.98px) {
   .team {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -428,23 +434,21 @@ ul {
   letter-spacing: 0.03em;
 }
 
+@media screen and (max-width: 768px) {
+  .team__title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+}
+
 .our-employees {
   padding: 0px;
 }
 
-@media screen and (min-width: 480px) {
-  .our-employees {
-    flex-direction: column;
-    padding-left: 0px;
-    width: 450px;
-    height: auto;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .our-employees {
-    width: 354px;
-    height: auto;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -452,8 +456,6 @@ ul {
   .our-employees {
     display: flex;
     flex-direction: row;
-    width: 270px;
-    height: auto;
   }
 }
 
@@ -469,8 +471,39 @@ ul {
   }
 }
 
+@media screen and (max-width: 767.98px) {
+  .our-employees__best:nth-child(-n + 4) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .our-employees__best:nth-child(-n + 2) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .our-employees__best:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .our-employees__images {
+    width: 354px;
+    height: 374px;
+  }
+}
+
 .our-employees__group {
   padding: 30px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .our-employees__group {
+    padding: 30px 74px 24px 74px;
+  }
 }
 
 .our-employees__name {
@@ -485,6 +518,12 @@ ul {
   letter-spacing: 0.03em;
 }
 
+@media screen and (min-width: 480px) and (max-width: 1199.98px) {
+  .our-employees__name {
+    line-height: 1.7;
+  }
+}
+
 .our-employees__text {
   display: flex;
   padding-top: 0px;
@@ -492,14 +531,29 @@ ul {
   margin-bottom: 16px;
   justify-content: center;
   color: var(--additional-text-color);
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
 }
 
+@media screen and (min-width: 480px) and (max-width: 1199.98px) {
+  .our-employees__text {
+    line-height: 1.7;
+  }
+}
+
 .social {
   display: inline-flex;
   padding-left: 0px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 .social__icons {

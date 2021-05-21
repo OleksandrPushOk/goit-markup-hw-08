@@ -1,6 +1,12 @@
 .social {
   display: inline-flex;
   padding-left: 0px;
+
+  @media screen and (max-width: 767.98px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 .social__icons {
