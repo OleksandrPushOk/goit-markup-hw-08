@@ -239,6 +239,12 @@ ul {
   background-color: var(--additional-background-color);
 }
 
+@media screen and (max-width: 767.98px) {
+  .hero {
+    background-size: 480px 400px;
+  }
+}
+
 .hero__bgr-images {
   max-width: 1600px;
   height: 600px;
@@ -249,6 +255,12 @@ ul {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media screen and (max-width: 767.98px) {
+  .hero__bgr-images {
+    background-size: 480px 400px;
+  }
 }
 
 .hero__title {
