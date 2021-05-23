@@ -3,23 +3,59 @@
   padding-bottom: 60px;
 
   background-color: var(--additional-background-color);
+
+  @media screen and (max-width: 767.98px) {
+    display: block;
+  }
 }
 
 .box {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  @media screen and (max-width: 767.98px) {
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
 }
 
 .box1 {
   flex-direction: column;
   align-items: baseline;
+
+  @media screen and (max-width: 767.98px) {
+    margin-bottom: 60px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    margin: 60px 0px 60px 76px;
+  }
 }
 
 .box2 {
   flex-direction: column;
   align-items: baseline;
   margin-left: 70px;
+
+  @media screen and (max-width: 767.98px) {
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    margin: 65px 89px 102px auto;
+  }
 }
 
 .box2__paragraph {
@@ -33,6 +69,12 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-decoration: none;
+
+  @media screen and (max-width: 767.98px) {
+    display: flex;
+    justify-content: center;
+    line-height: 1.17;
+  }
 }
 
 .box-social {
@@ -41,8 +83,23 @@
 
 .block__box3 {
   display: inline-block;
-  margin-left: 93px;
-  width: 570px;
+
+  @media screen and (max-width: 767.98px) {
+    margin-left: 0px;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 166px;
+    margin-right: 152px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
 
 .block__paragraph {
@@ -56,4 +113,15 @@
   letter-spacing: 0.03em;
 
   color: var(--additional-white-text-color);
+
+  @media screen and (max-width: 767.98px) {
+    display: flex;
+    justify-content: center;
+    line-height: 1.17;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    display: flex;
+    justify-content: center;
+  }
 }

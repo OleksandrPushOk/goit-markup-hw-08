@@ -1,6 +1,11 @@
 .social-footer {
   display: inline-flex;
   padding-left: 0px;
+
+  @media screen and (max-width: 767.98px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .social-footer__list:not(:last-child) {
