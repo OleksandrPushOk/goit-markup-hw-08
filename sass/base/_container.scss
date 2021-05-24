@@ -2,22 +2,22 @@
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  background-color: aqua;
+  // background-color: aqua;
 
   @media screen and (min-width: 480px) {
     max-width: 480px;
     margin-left: auto;
     margin-right: auto;
-    background-color: greenyellow;
+    // background-color: greenyellow;
   }
 
   @media screen and (min-width: 768px) {
     max-width: 768px;
-    background-color: rosybrown;
+    // background-color: rosybrown;
   }
 
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
-    background-color: yellow;
+    // background-color: yellow;
   }
 }
