@@ -7,7 +7,6 @@
 
   @media screen and (max-width: 767.98px) {
     display: flex;
-    justify-content: space-between;
   }
 }
 
@@ -37,6 +36,20 @@
   &:active {
     color: red;
   }
+
+  @media screen and (max-width: 767.98px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 24px;
+    line-height: 1.17;
+  }
+
+  @media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    font-size: 24px;
+    line-height: 1.17;
+  }
 }
 
 .logo .color-two {
@@ -46,6 +59,20 @@
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+
+  @media screen and (max-width: 767.98px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 24px;
+    line-height: 1.17;
+  }
+
+  @media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    font-size: 24px;
+    line-height: 1.17;
+  }
 }
 
 .site-nav {
@@ -63,7 +90,11 @@
   margin-bottom: 0px;
 
   &:first-child {
-    margin-left: 93px;
+    margin-left: 88px;
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 93px;
+    }
   }
 }
 .site-nav__iten + .site-nav__iten {
@@ -95,6 +126,10 @@
   &:active {
     color: red;
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    line-height: 1.17;
+  }
 }
 
 .site-nav .active:visited {
@@ -115,32 +150,54 @@
 .connection {
   display: none;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0px;
+  }
+
+  @media screen and (min-width: 1200px) {
     display: flex;
     padding-left: 0px;
   }
 }
 
 .connection__with-us {
-  display: inline-flex;
-  align-items: center;
-
   color: var(--additional-text-color);
 
   &:first-child {
-    margin-left: 305px;
+    @media screen and (min-width: 1200px) {
+      margin-left: 305px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+.connection__with-us:first-child {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    margin: 21px auto 10px 84px;
+  }
+}
+
+.connection__with-us:last-child {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    margin: 0px auto 21px 84px;
   }
 }
 
 .connection__with-us + .connection__with-us {
-  margin-left: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 30px;
+  }
 }
 
 .connection__contacts {
   display: inline-flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
 
   color: var(--additional-text-color);
   font-weight: 500;
@@ -162,6 +219,16 @@
   &:active {
     color: red;
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .connection__svg-one {
@@ -170,6 +237,11 @@
   height: 12px;
   cursor: pointer;
   fill: currentColor;
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    width: 14px;
+    height: 10px;
+  }
 }
 
 .connection__svg-two {
@@ -178,4 +250,9 @@
   height: 16px;
   cursor: pointer;
   fill: currentColor;
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    width: 10px;
+    height: 14px;
+  }
 }
