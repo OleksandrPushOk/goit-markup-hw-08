@@ -64,7 +64,7 @@
   margin-top: 0px;
 
   color: var(--additional-white-text-color);
-  font-style: bold;
+  font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -93,8 +93,11 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-left: 166px;
+
+    width: 450px;
+    height: 156px;
     margin-right: 152px;
+    margin-left: auto;
   }
 
   @media screen and (min-width: 1200px) {

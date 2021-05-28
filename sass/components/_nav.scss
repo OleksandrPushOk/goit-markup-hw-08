@@ -179,13 +179,15 @@
 
 .connection__with-us:first-child {
   @media screen and (min-width: 768px) and (max-width: 1199.98px) {
-    margin: 21px auto 10px 84px;
+    margin: 0px auto 10px 84px;
+    padding-top: 21px;
   }
 }
 
 .connection__with-us:last-child {
   @media screen and (min-width: 768px) and (max-width: 1199.98px) {
-    margin: 0px auto 21px 84px;
+    margin: 0px auto 0px 84px;
+    padding-bottom: 21px;
   }
 }
 
