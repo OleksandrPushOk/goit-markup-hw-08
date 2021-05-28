@@ -1,4 +1,5 @@
 .mobile-menu {
+  max-width: 767px;
   position: fixed;
   top: 0;
   left: 100%;
@@ -19,10 +20,6 @@
     left: 0;
     // opacity: 1;
   }
-}
-
-.mobile-menu__list {
-  padding-left: 0px;
 }
 
 .mobile-menu-button {
@@ -58,6 +55,10 @@
   .is-open & {
     display: block;
   }
+}
+
+.mobile-menu__list {
+  padding-left: 0px;
 }
 
 .mobile-menu__iten:not(:last-child) {
