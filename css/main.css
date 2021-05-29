@@ -351,13 +351,14 @@ ul {
 }
 
 .mobile-menu {
-  max-width: 767px;
   position: fixed;
+  overflow: hidden;
   top: 0;
   left: 100%;
   display: flex;
   flex-direction: column;
   padding: 48px 40px;
+  max-width: 767px;
   width: 100%;
   height: 100vh;
   background-color: #fff;
@@ -407,14 +408,11 @@ ul {
 
 .mobile-menu__list {
   padding-left: 0px;
+  padding-bottom: 302px;
 }
 
 .mobile-menu__iten:not(:last-child) {
   margin-bottom: 32px;
-}
-
-.mobile-menu__iten:last-child {
-  margin-bottom: 302px;
 }
 
 .mobile-menu__list-link {
@@ -443,6 +441,7 @@ ul {
 }
 
 .mobile-menu__connect {
+  margin-top: auto;
   padding: 0px;
 }
 
@@ -457,6 +456,13 @@ ul {
   line-height: 1.18;
   letter-spacing: 0.02em;
   text-decoration: none;
+}
+
+@media screen and (max-width: 479.98px) {
+  .connect__link {
+    font-size: 22px;
+    line-height: 1.17;
+  }
 }
 
 .connect__us {
@@ -882,7 +888,7 @@ ul {
   padding: 0px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .our-employees {
     display: flex;
     flex-wrap: wrap;
@@ -1103,6 +1109,12 @@ ul {
 @media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
   .clients-icons__list:nth-child(4) {
     margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 369.98px) {
+  .clients-icons__list:nth-child(5) {
+    margin-bottom: 30px;
   }
 }
 
@@ -1558,6 +1570,12 @@ ul {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .form-footer__input {
+    width: 358px;
+  }
+}
+
 .form-footer__button {
   display: inline-flex;
   align-items: center;
@@ -1805,6 +1823,7 @@ ul {
   line-height: 1.555;
   letter-spacing: 0.03em;
   position: absolute;
+  margin: 0;
   width: 322px;
   height: 168px;
   top: 63px;
@@ -1812,6 +1831,37 @@ ul {
   left: 24px;
   right: 24px;
   color: var(--additional-white-text-color);
+}
+
+@media screen and (max-width: 369.98px) {
+  .projects__text p {
+    top: 15px;
+    left: 15px;
+  }
+}
+
+@media screen and (min-width: 370px) and (max-width: 479.98px) {
+  .projects__text p {
+    top: 40px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767.98px) {
+  .projects__text p {
+    width: 402px;
+    height: 140px;
+    top: 77px;
+    bottom: 77px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .projects__text p {
+    width: 306px;
+    height: 196px;
+    top: 49px;
+    bottom: 49px;
+  }
 }
 
 .projects__picture {
@@ -1825,6 +1875,13 @@ ul {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .projects__review:nth-child(-n + 2) {
+    width: 100%;
+    height: 146px;
+  }
 }
 
 .projects__review h2 {
@@ -1871,11 +1928,20 @@ ul {
   transform: translate(-50%, -50%);
   padding: 40px 40px;
   width: 528px;
-  height: 581px;
+  max-height: 100%;
+  max-width: 100%;
+  height: auto;
   background-color: var(--basic-background-color);
 }
 
-@media screen and (max-width: 1199.98px) {
+@media screen and (max-width: 479.98px) {
+  .modal {
+    width: 450px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199.98px) {
   .modal {
     width: 450px;
     height: 609px;
@@ -1913,7 +1979,14 @@ ul {
   min-height: 342px;
 }
 
-@media screen and (max-width: 1199.98px) {
+@media screen and (max-width: 479.98px) {
+  .contact-form {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199.98px) {
   .contact-form {
     width: 370px;
     min-height: 342px;
@@ -1933,7 +2006,7 @@ ul {
 
 @media screen and (max-width: 1199.98px) {
   .contact-form__paragraph {
-    width: 370px;
+    width: 100%;
     line-height: 1.5;
     text-align: center;
   }
@@ -1987,6 +2060,12 @@ ul {
   border: 1px solid var(--hover-focus-color);
 }
 
+@media screen and (max-width: 479.98px) {
+  .contact-form__field {
+    max-width: 100%;
+  }
+}
+
 .contact-form__invalid:invalid {
   border: 1px solid red;
 }
@@ -2015,6 +2094,7 @@ ul {
 
 .contact-form__checkbox {
   opacity: 0;
+  width: 100%;
 }
 
 .contact-form__checkbox-label {

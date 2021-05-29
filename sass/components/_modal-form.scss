@@ -2,7 +2,12 @@
   width: 448px;
   min-height: 342px;
 
-  @media screen and (max-width: 1199.98px) {
+  @media screen and (max-width: 479.98px) {
+    width: 100%;
+    height: auto;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 1199.98px) {
     width: 370px;
     min-height: 342px;
   }
@@ -20,7 +25,7 @@
   color: var(--basic-text-color);
 
   @media screen and (max-width: 1199.98px) {
-    width: 370px;
+    width: 100%;
     line-height: 1.5;
     text-align: center;
   }
@@ -74,6 +79,10 @@
   &:focus {
     border: 1px solid var(--hover-focus-color);
   }
+
+  @media screen and (max-width: 479.98px) {
+    max-width: 100%;
+  }
 }
 
 .contact-form__invalid:invalid {
@@ -105,6 +114,7 @@
 
 .contact-form__checkbox {
   opacity: 0;
+  width: 100%;
 }
 
 .contact-form__checkbox-label {

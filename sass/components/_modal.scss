@@ -26,10 +26,17 @@
 
   padding: 40px 40px;
   width: 528px;
-  height: 581px;
+  max-height: 100%;
+  max-width: 100%;
+  height: auto;
   background-color: var(--basic-background-color);
 
-  @media screen and (max-width: 1199.98px) {
+  @media screen and (max-width: 479.98px) {
+    width: 450px;
+    height: auto;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 1199.98px) {
     width: 450px;
     height: 609px;
   }
