@@ -29,6 +29,10 @@ body {
   background-color: var(--basic-background-color);
 }
 
+body.overflow-is-hidden {
+  overflow: hidden;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -352,8 +356,8 @@ ul {
 
 .mobile-menu {
   position: fixed;
-  overflow: hidden;
   top: 0;
+  overflow: hidden;
   left: 100%;
   display: flex;
   flex-direction: column;
