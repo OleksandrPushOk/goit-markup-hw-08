@@ -1100,8 +1100,7 @@ ul {
 
 @media screen and (max-width: 479.98px) {
   .clients-icons__list {
-    margin-right: auto;
-    margin-left: auto;
+    flex-basis: calc(100% / 1);
   }
 }
 
@@ -1123,7 +1122,7 @@ ul {
   }
 }
 
-@media screen and (max-width: 369.98px) {
+@media screen and (max-width: 479.98px) {
   .clients-icons__list:nth-child(5) {
     margin-bottom: 30px;
   }
@@ -1174,6 +1173,12 @@ ul {
 
 .clients-icons__link:hover, .clients-icons__link:focus {
   border: 1px solid #2196f3;
+}
+
+@media screen and (max-width: 479.98px) {
+  .clients-icons__link {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767.98px) {

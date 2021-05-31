@@ -44,8 +44,7 @@
 
 .clients-icons__list {
   @media screen and (max-width: 479.98px) {
-    margin-right: auto;
-    margin-left: auto;
+    flex-basis: calc(100% / 1);
   }
 }
 
@@ -68,7 +67,7 @@
 }
 
 .clients-icons__list:nth-child(5) {
-  @media screen and (max-width: 369.98px) {
+  @media screen and (max-width: 479.98px) {
     margin-bottom: 30px;
   }
 
@@ -117,6 +116,10 @@
   &:hover,
   &:focus {
     border: 1px solid rgba(33, 150, 243, 1);
+  }
+
+  @media screen and (max-width: 479.98px) {
+    width: 100%;
   }
 
   @media screen and (min-width: 480px) and (max-width: 767.98px) {
