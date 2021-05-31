@@ -38,7 +38,7 @@
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199.98px) {
-    margin: 60px 0px 60px 76px;
+    margin: 0px 0px 60px 76px;
   }
 }
 
@@ -54,7 +54,7 @@
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199.98px) {
-    margin: 65px 89px 102px auto;
+    margin: 0px 89px 102px auto;
   }
 }
 
@@ -70,7 +70,7 @@
   letter-spacing: 0.03em;
   text-decoration: none;
 
-  @media screen and (max-width: 767.98px) {
+  @media screen and (max-width: 1199.98px) {
     display: flex;
     justify-content: center;
     line-height: 1.17;

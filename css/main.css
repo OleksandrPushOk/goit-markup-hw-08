@@ -46,9 +46,11 @@ ul {
 }
 
 .container {
-  width: 100%;
+  max-width: 100%;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 480px) {
@@ -157,6 +159,7 @@ ul {
 
 .site-nav {
   display: none;
+  margin-left: 88px;
 }
 
 @media screen and (min-width: 768px) {
@@ -166,20 +169,16 @@ ul {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .site-nav {
+    margin-left: 93px;
+  }
+}
+
 .site-nav__iten {
   display: block;
   position: relative;
   margin-bottom: 0px;
-}
-
-.site-nav__iten:first-child {
-  margin-left: 88px;
-}
-
-@media screen and (min-width: 1200px) {
-  .site-nav__iten:first-child {
-    margin-left: 93px;
-  }
 }
 
 .site-nav__iten + .site-nav__iten {
@@ -238,8 +237,10 @@ ul {
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .connection {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
     padding-left: 0px;
+    margin-left: 84px;
   }
 }
 
@@ -269,15 +270,13 @@ ul {
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .connection__with-us:first-child {
-    margin: 0px auto 10px 84px;
-    padding-top: 21px;
+    margin: 0px auto 10px 0px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .connection__with-us:last-child {
-    margin: 0px auto 0px 84px;
-    padding-bottom: 21px;
+    margin: 0px auto 0px 0px;
   }
 }
 
@@ -361,6 +360,7 @@ ul {
   left: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   padding: 48px 40px;
   max-width: 767px;
   width: 100%;
@@ -412,10 +412,9 @@ ul {
 
 .mobile-menu__list {
   padding-left: 0px;
-  padding-bottom: 302px;
 }
 
-.mobile-menu__iten:not(:last-child) {
+.mobile-menu__iten {
   margin-bottom: 32px;
 }
 
@@ -599,7 +598,14 @@ ul {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 1199.98px) {
+@media screen and (max-width: 399.98px) {
+  .hero__title {
+    font-size: 20px;
+    line-height: 1.615;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 1199.98px) {
   .hero__title {
     font-size: 26px;
     line-height: 1.615;
@@ -1081,6 +1087,7 @@ ul {
   .clients-icons {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
@@ -1128,7 +1135,7 @@ ul {
   }
 }
 
-@media screen and (min-width: 479.98px) and (max-width: 767.98px) {
+@media screen and (min-width: 480px) and (max-width: 767.98px) {
   .clients-icons__list:nth-child(2n + 1) {
     margin-right: 30px;
   }
@@ -1246,7 +1253,7 @@ ul {
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .box1 {
-    margin: 60px 0px 60px 76px;
+    margin: 0px 0px 60px 76px;
   }
 }
 
@@ -1266,7 +1273,7 @@ ul {
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .box2 {
-    margin: 65px 89px 102px auto;
+    margin: 0px 89px 102px auto;
   }
 }
 
@@ -1282,7 +1289,7 @@ ul {
   text-decoration: none;
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 1199.98px) {
   .box2__paragraph {
     display: flex;
     justify-content: center;
@@ -1474,7 +1481,7 @@ ul {
   color: red;
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 1199.98px) {
   .group-address__link {
     display: flex;
     justify-content: center;
@@ -1755,9 +1762,10 @@ ul {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .projects__list {
     width: 354px;
+    display: flex;
   }
 }
 
@@ -1790,6 +1798,13 @@ ul {
 
 .projects__link:hover, .projects__link:focus {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .projects__link {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .projects__box {
@@ -1881,10 +1896,9 @@ ul {
   border-bottom: 1px solid #eeeeee;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .projects__review:nth-child(-n + 2) {
-    width: 100%;
-    height: 146px;
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .projects__review {
+    flex-grow: 1;
   }
 }
 
